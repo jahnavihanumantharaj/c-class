@@ -1,20 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int add(int a, int b) {
-    return a + b;
+float area(float l, float b) {
+    return l * b;
 }
 
 int main() {
-    int num1, num2, sum;
+    float num1, num2, result;
 
     cout << "enter first number: ";
     cin >> num1;
 
     cout << "enter second number: ";
     cin >> num2;
+    result = area(num1, num2);
 
-    sum = add(num1, num2);
-
-    cout << "sum is " << sum << endl;
+    cout << "result:" << result << endl;
 }
